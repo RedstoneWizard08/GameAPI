@@ -1,0 +1,18 @@
+[package]
+name = "gameapi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gameapi-api = { version = "0.1.0", path = "./api" }
+actix-web = "4.1.0"
+futures = "0.3"
+reqwest = "0.11.11"
+serde_json = "1.0"
+serde_yaml = "0.8"
+serde_urlencoded = "0.7.1"
+toml = "0.5"
+serde = { version = "1.0", features = ["derive"] }
+
+[workspace]
+members = ["api"]
