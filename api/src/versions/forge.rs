@@ -1,4 +1,4 @@
-use super::maven::{RawMavenVersionResult, MavenVersionResult};
+use super::maven::{MavenVersionResult, RawMavenVersionResult};
 
 pub async fn get_forge_versions() -> MavenVersionResult {
     let client = reqwest::Client::new();
